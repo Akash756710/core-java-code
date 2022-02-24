@@ -1,0 +1,20 @@
+package strings;
+import java.util.Scanner;
+public class Example2 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		String message;
+		System.out.println("Enter the String = ");
+		message=sc.nextLine();
+		String[] words=message.split(" ");
+		System.out.println("String divided into word");
+		System.out.println();
+		for(String w:words)
+		{
+			System.out.println(w);
+		}
+		
+	}
+
+}

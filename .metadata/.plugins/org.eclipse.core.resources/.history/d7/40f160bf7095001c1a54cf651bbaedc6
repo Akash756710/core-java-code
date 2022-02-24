@@ -1,0 +1,49 @@
+package object;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Employee {
+  Scanner sc=new Scanner(System.in);
+  int EmpId,EmpMobileNo;
+  float EmpSalary;
+  String EmpName,EmpEmail;
+  Date EmpDOB,EmpDOJ;
+  
+  void readEmpDetails() throws ParseException  {
+	  System.out.println("enter the emp data");
+	  System.out.println("enter the empid");
+	  EmpId=sc.nextInt();
+	  System.out.println("enter the empName");
+	  sc.nextLine();
+	  EmpName=sc.nextLine();
+	  System.out.println("enter the empMobile");
+	  EmpMobileNo=sc.nextInt();
+	  System.out.println("enter the emp salary");
+	  EmpSalary =sc.nextFloat();
+	  System.out.println("enter the emp email");
+	  sc.nextLine();
+	  EmpEmail=sc.nextLine();
+	  System.out.println("enter the emp DOB 'dd/mm/yyyy");
+	 String DOB =sc.nextLine();
+	 System.out.println("Enter the emp doj 'dd/mm/yyyy");
+	 String DOJ=sc.nextLine();
+	 SimpleDateFormat sdf=new SimpleDateFormat("dd/mm/yyyy");
+	 EmpDOB =sdf.parse(DOB);
+	 EmpDOJ =sdf.parse(DOJ);
+	 
+	  
+  }
+  @SuppressWarnings("deprecation")
+	void displayStudentDetails(){
+		System.out.println("Entered the Student data ...............");
+		System.out.println("Student id = " +EmpId );
+		System.out.println("Student name = " + EmpName);
+		System.out.println("Emp MobileNo="+EmpMobileNo);
+		System.out.println("Emp Salary ="+EmpSalary);
+		System.out.println("Emp Email ="+EmpEmail);
+		System.out.println("Student dob = " + EmpDOB.getDate()+"/"+EmpDOB.getMonth()+"/"+EmpDOB.getYear());
+		System.out.println("Student dob = " + EmpDOJ.getDate()+"/"+EmpDOJ.getMonth()+"/"+EmpDOJ.getYear());
+}
+}
