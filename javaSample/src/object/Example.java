@@ -7,7 +7,7 @@ public class Example {
 	Date dob;
          Scanner sc=new Scanner(System.in);
          
-         void readStudentDetails() throws {
+         void readStudentDetails()  {
         	 System.out.println("Enter the Student data");
         	 System.out.println("enter the Student id..");
         	 Studentid=sc.nextInt();

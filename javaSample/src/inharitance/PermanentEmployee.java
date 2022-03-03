@@ -1,0 +1,22 @@
+package inharitance;
+
+public class PermanentEmployee extends Employee {
+	float salaryPerMonth;
+	float totalSalaryPerMonth;
+	float noOfDaysWorked;
+	
+	void readSalaryPerMonth() {
+		System.out.println("Enter the salary per hour");
+		salaryPerMonth = sc.nextFloat();
+	}
+	
+	void readnoOfDayssWorked() {
+		System.out.println("Enter the noOfHoursWorked");
+		noOfDaysWorked = sc.nextFloat();
+	}
+	
+	void calculateSalary() {	
+		totalSalaryPerMonth =  (salaryPerMonth/30) * noOfDaysWorked;
+		System.out.println("Total Salary For a Week = " + totalSalaryPerMonth);
+	}
+}
