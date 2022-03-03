@@ -1,0 +1,10 @@
+package inharitance3;
+
+public class Mp3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

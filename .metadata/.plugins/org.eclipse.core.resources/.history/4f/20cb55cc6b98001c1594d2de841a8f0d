@@ -1,0 +1,21 @@
+package inharitance2;
+import java.util.Scanner;
+public class Bank {
+Scanner sc=new Scanner(System.in);
+	void intrest() {
+		float principal;
+		float intrest;
+		float time ;
+		
+		
+		System.out.println("Enter the principal  =");
+		principal=sc.nextFloat();
+		System.out.println("Enter the intrest");
+		intrest=sc.nextFloat();
+		System.out.println("Enter the time  =");
+		time=sc.nextFloat();
+		float Si=(principal*intrest*time)/100;
+		System.out.println("Enter the si ="+Si);
+	}
+
+}

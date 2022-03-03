@@ -1,0 +1,11 @@
+package object;
+
+public class MarksMain {
+
+	public static void main(String[] args) {
+		Marks stu=new Marks();
+		stu.Student();
+
+	}
+
+}

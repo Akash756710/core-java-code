@@ -1,0 +1,15 @@
+package object;
+
+import java.text.ParseException;
+
+public class MainEmp {
+
+	public static void main(String[] args) throws ParseException {
+		Employee em=new Employee();
+		em.readEmpDetails();
+		em.displayStudentDetails();
+		
+
+	}
+
+}

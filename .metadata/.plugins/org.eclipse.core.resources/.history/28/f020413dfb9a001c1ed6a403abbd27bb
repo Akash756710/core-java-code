@@ -1,0 +1,7 @@
+package abstrac;
+
+public interface Interface {
+
+	int a=19;
+	public abstract void add();
+}

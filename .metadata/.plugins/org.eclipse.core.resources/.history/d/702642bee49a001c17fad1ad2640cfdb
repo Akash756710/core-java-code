@@ -1,0 +1,14 @@
+package abstrac;
+
+public class Square extends Rectengle{
+
+	public Square(String color, double widht, double length, double area, double perimeter) {
+		super(color, widht, length, area, perimeter);
+		if(widht==length) {
+			System.out.println("Area of the  " +(length*widht));
+			System.out.println("Premeter of the "+ (4*length));
+		}
+	}
+	
+
+}
